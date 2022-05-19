@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="See Your Profile" />
+        <item
+            android:id="@+id/payment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Your Payment History" />
+        <item
+            android:id="@+id/caseSelect"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Select Your Cases" />
+        <item
+            android:id="@+id/selectedCases"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Your Selected Cases" />
+        <item
+            android:id="@+id/caseStatistics"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Case Statistics" />
+        <item
+            android:id="@+id/note"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Take a Note" />
+
+    </group>
+
+    <item android:title="Manage">
+        <menu>
+            <item
+                android:id="@+id/tutorial"
+                android:icon="@drawable/ic_menu_share"
+                android:title="How to Use" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Settings" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About Authority" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

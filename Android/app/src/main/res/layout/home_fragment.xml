@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$HomeFragment">
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="245dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="02 March 2019"
+        app:layout_constraintBottom_toTopOf="@+id/date_description"
+        app:layout_constraintEnd_toStartOf="@+id/today_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/today_label"
+        android:layout_width="164dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:gravity="end|center_vertical"
+        android:paddingRight="10dp"
+        android:text="Today"
+        app:layout_constraintBottom_toTopOf="@+id/date_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/date_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date_description"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:gravity="center"
+        android:text="@string/calender_lebel"
+        android:textAlignment="center"
+        android:background="@drawable/date_description_back"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_label"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_description" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
